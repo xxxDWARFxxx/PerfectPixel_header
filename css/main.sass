@@ -1,0 +1,152 @@
+*
+    font-family: 'Roboto Slab'
+    padding: 0
+    margin: 0
+header
+    background-image: url(../img/bgc.png)
+    background-repeat: no-repeat
+    background-size: cover
+
+.container
+    margin: auto
+    width: 1400px
+
+.header
+
+    &::after
+        content: ''
+        display: table
+        clear: both
+    &-content
+        // margin-left: 380px
+        margin-top: 183px
+        // max-width: 760px
+        width: 55%
+        display: inline-block
+    &-titel
+        font-size: 30px
+        font-weight: bold
+        color: #7c6db0
+        line-height: 0.98
+        // width: 650px
+        // letter-spacing: 7px
+
+    &-subtitel
+        display: inline-block
+        font-size: 36px
+        font-weight: bold
+        // line-height: 1.64
+        color: #ffffff
+        margin-top: 36px
+        padding: 11px 23px
+        background-color: #7f70b1
+        text-align: center
+    &-descr
+        // display: inline-block
+        font-size: 22px
+        margin-top: 94px
+        // vertical-align: middle
+
+        &__icon1
+            display: inline-block
+            margin-left: 9px
+            margin-right: 34px
+            vertical-align: middle
+        &__text
+            vertical-align: middle
+            display: inline-block
+
+    &__button
+        margin-top: 111px
+        font-family: 'Roboto Slab'
+        color: #ffffff
+        box-shadow: 0px 2px 16px 0 rgba(0, 215, 255, 0.44)
+        background-image: linear-gradient(130deg, #01c4e0, #01b3e0)
+        font-weight: bold
+        font-size: 22px
+        padding: 25px 55px
+        margin-right: 25px
+        outline: none
+
+    &__button-video
+        font-family: 'Roboto Slab'
+        outline: none
+        background: transparent
+        color: #01b3e0
+        border: solid 2px #01b3e0
+        padding: 23px 76px
+        font-weight: bold
+        font-size: 22px
+
+    &-image__gerl
+        float: right
+        margin-top: 17px
+footer
+    background-color: #5bafc967
+
+.section
+    // max-width: 1140px
+    padding-top: 40px
+    padding-bottom: 40px
+
+@media all and (max-width: 1400px)
+    body
+        overflow-x: hidden
+.section
+    max-width: 750px
+    display: block
+    margin-right: auto
+    margin-left: auto
+
+@media all and (max-width: 1024px)
+
+    .container
+        width: 1024px
+        margin: auto
+
+    .header
+        width: 100%
+        &-content
+            width: 40%
+            margin-top: 0px
+        &-image__gerl
+            float: none
+            display: inline-block
+        &__button
+            margin-bottom: 10px
+        &__button-video
+            margin-bottom: 10px
+    .section
+        // max-width: 750px
+        display: block
+
+@media all and (max-width: 850px)
+    .container
+        width: 100%
+    .header
+        width: 100%
+        &-content
+            display: table-cell
+            // align-items: mid
+            text-align: center
+        &__button
+            margin-right: 5px
+            margin-bottom: 5px
+        &-image__gerl
+            display: block
+            margin-left: auto
+            margin-right: auto
+
+@media all and (max-width: 767px)
+    .header
+        &-titel
+            font-size: 22px
+            margin-top: 10px
+        &-image__gerl
+            display: none
+        &-subtitel
+            font-size: 27px
+        &__button
+            font-size: 18px
+        &__button-video
+            font-size: 17px
